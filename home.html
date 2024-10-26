@@ -1,32 +1,51 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Literatura no meio do povo</title>
     
+    <!-- Faz com que o site se ajuste à largura da tela do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Define o título da página, que aparece na aba do navegador -->
+    <title>Literatura no meio do povo</title>
+
+    <!-- Link para o CSS do Bootstrap, uma biblioteca para facilitar o design responsivo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
+    <!-- Cria uma barra de navegação (navbar) fixa no topo da página -->
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
+        
+        <!-- Link para o nome da navbar, que redireciona para a página inicial -->
         <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        
+        <!-- Botão para abrir o menu lateral (offcanvas) -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <!-- Elemento do tipo "offcanvas", um menu lateral que se abre ao clicar no botão -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
+            <!-- Cabeçalho do offcanvas com o título e um botão para fechá-lo -->
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          
+          <!-- Corpo do menu lateral (offcanvas) -->
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <!-- Item de navegação padrão -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
+              <!-- Outro item de navegação -->
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
+              <!-- Item de navegação com submenu dropdown -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
@@ -35,12 +54,14 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li>
+                    <!-- Linha divisória dentro do dropdown -->
                     <hr class="dropdown-divider">
                   </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
             </ul>
+            <!-- Formulário de busca dentro do menu lateral -->
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -49,6 +70,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Link para o JavaScript do Bootstrap, que adiciona funcionalidades interativas como menus dropdown e botões -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
